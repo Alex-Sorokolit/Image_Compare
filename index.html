@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="./index.js" defer></script>
+    <title>Comparison</title>
+  </head>
+  <body>
+    <div class="comparison">
+      <img
+        class="comparison__image comparison__image--levels"
+        id="levels"
+        src="./img/Nedostroy/Comparison/levels.jpg"
+        alt="levels"
+      />
+      <img
+        id="raster"
+        class="comparison__image comparison__image--raster"
+        src="./img/Nedostroy/Comparison/rastr.jpg"
+        alt="raster"
+      />
+      <input
+        type="range"
+        min="0"
+        max="1000"
+        value="500"
+        id="slider"
+        oninput="slide()"
+      />
+    </div>
+  </body>
+</html>
